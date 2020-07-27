@@ -37,7 +37,7 @@ gulp.task("sass", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "natours",
+    server: ".",
     notify: false,
     open: true,
     cors: true,
@@ -78,7 +78,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("natours"));
+    .pipe(gulp.dest("."));
 });
 
 gulp.task("copy", function () {
@@ -89,12 +89,9 @@ gulp.task("copy", function () {
     ], {
       base: "source"
     })
-  .pipe(gulp.dest("natours"));
+  .pipe(gulp.dest("."));
 });
 
-gulp.task("clean", function () {
-  return del("natours");
-});
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
