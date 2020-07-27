@@ -1,0 +1,18 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.section-about__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.section-about__text {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 6rem) / 2);
+}
