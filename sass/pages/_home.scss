@@ -3,6 +3,10 @@
   padding: 25rem 0;
   margin-top: -20vh;
 
+  @include respond(tab-port) {
+    padding: 20rem 3rem;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -29,6 +33,10 @@
   margin-top: -10rem;
   transform: skewY(-7deg);
 
+  @include respond(tab-port) {
+    padding: 20rem 3rem;
+  }
+
   & > * {
     transform: skewY(7deg);
   }
@@ -38,6 +46,10 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem;
   margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 3rem 10rem;
+  }
 
   &__cards {
     display: flex;
@@ -50,6 +62,10 @@
 .section-stories {
   position: relative;
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 3rem;
+  }
 }
 
 .section-book {
@@ -59,6 +75,10 @@
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 3rem;
+  }
 }
 
 .book {

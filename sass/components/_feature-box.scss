@@ -8,6 +8,13 @@
   margin-right: 6rem;
   transition: transform 0.3s;
 
+  @include respond(tab-port) {
+    width: 45%;
+    flex-flow: wrap;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
   &--heart {
     margin-right: 0;
   }
@@ -35,4 +42,14 @@
   justify-content: center;
   max-width: 114rem;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    max-width: 90rem;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+
+    .features__container:nth-child(2n) {
+      margin-right: 2rem;
+    }
+  }
 }

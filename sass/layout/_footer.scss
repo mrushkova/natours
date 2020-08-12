@@ -4,6 +4,10 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    padding: 8rem 3rem;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
