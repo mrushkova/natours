@@ -19,6 +19,10 @@
 
 .u-margin-top-big {
   margin-top: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 4rem !important;
+  }
 }
 
 .u-margin-top-huge {
