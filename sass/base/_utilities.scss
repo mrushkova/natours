@@ -4,9 +4,17 @@
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond(tab-land) {
+    margin-bottom: 2rem !important;
+  }
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 4rem !important;
+  }
 }
 
 .u-margin-top-big {

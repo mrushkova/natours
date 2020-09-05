@@ -5,12 +5,16 @@
   font-size: 1.4rem;
 
   @include respond(tab-port) {
-    padding: 8rem 3rem;
+    padding: 8rem 2rem;
   }
 
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__logo {
@@ -23,6 +27,10 @@
     justify-content: space-between;
     max-width: 114rem;
     margin: 0 auto;
+
+    @include respond(tab-port) {
+      flex-flow: column;
+    }
   }
 
   &__navigation {
@@ -30,11 +38,19 @@
     margin-right: 6rem;
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -66,5 +82,11 @@
     width: calc((85% - 6rem) / 2);
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
   }
 }

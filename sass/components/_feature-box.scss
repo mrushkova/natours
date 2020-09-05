@@ -13,6 +13,7 @@
     flex-flow: wrap;
     margin-right: 0;
     margin-bottom: 3rem;
+    padding: 2rem;
   }
 
   &--heart {
@@ -30,6 +31,10 @@
     );
     background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
