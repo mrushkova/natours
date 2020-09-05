@@ -23,18 +23,38 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      flex-flow: column;
+    }
   }
 
   &__left {
     width: 33.33333333%;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: flex;
+    }
   }
   &__right {
     width: 66.66666667%;
     padding: 1.5rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
   }
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      width: 50%;
+    }
   }
   &__text {
     font-size: 1.4rem;
@@ -43,6 +63,10 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
   }
 
   &:target {
