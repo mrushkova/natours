@@ -9,8 +9,8 @@ One-page web app for booking tours.
 - Flexbox layout
 - Responsive design
 - Desktop First
-- Sass (SCSS).
-- Gulp.
+- Sass (SCSS)
+- Gulp
 - Cross-Browser Compatibility: Chrome, Firefox, Safari
 
 The layout is provided by Advanced CSS and Sass Udemy learning course.
