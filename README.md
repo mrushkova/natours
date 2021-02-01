@@ -1,6 +1,6 @@
-# Natours landing page
+# ![Natours](https://github.com/mrushkova/natours/blob/master/img/logo-green-small-1x.png)
 
-One-page web app for booking tours.
+One-page [web app](https://mrushkova.github.io/natours/) for booking tours.
 
 ## Technologies
 
